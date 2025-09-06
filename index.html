@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Order Tracking</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1>Order Tracking</h1>
+      <p class="sub">Customer Can Track Your Order Progress Here By Enter the ID.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <form id="trackForm" class="form">
+        <div class="field">
+          <label for="orderId">Order ID</label>
+          <input id="orderId" name="orderId" type="text" placeholder="e.g., 1001 or DEMO-001" required />
+        </div>
+        <div class="field">
+          <label for="email">Email (optional)</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" />
+        </div>
+        <div class="actions">
+          <button type="submit" class="btn">Track Order</button>
+          <button id="demoBtn" type="button" class="btn btn-ghost">Use Demo Order</button>
+        </div>
+        <p class="hint">Try <code>1001</code>, <code>1002</code>, <code>1003</code>, or click “Use Demo Order”.</p>
+      </form>
+    </section>
+
+    <section id="result" class="card hidden"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
